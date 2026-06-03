@@ -686,6 +686,14 @@ export default function App() {
         </div>
       )}
 
+      {selectedTracker && (
+        <HistoryModal
+          isOpen={isHistoryOpen}
+          onClose={() => setIsHistoryOpen(false)}
+          tracker={selectedTracker}
+        />
+      )}
+
     </div>
   );
 }
