@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </linearGradient>
+
+    <!-- Glowing Vector Gradient -->
+    <linearGradient id="glowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+
+    <!-- Secondary highlight glow -->
+    <radialGradient id="radialGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Soft Ambient Glow behind the trend line -->
+  <circle cx="280" cy="240" r="180" fill="url(#radialGlow)" />
+  
+  <!-- Outer Rim / Border (High Contrast Green subtle glow offset) -->
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="#22c55e" stroke-width="6" opacity="0.15" />
+  
+  <!-- Sleek Climbing Tracks / Dynamic Bars of Daily Growth -->
+  <!-- Bar 1 (Mon) -->
+  <rect x="110" y="320" width="45" height="70" rx="12" fill="#292524" stroke="#44403c" stroke-width="2" />
+  <!-- Bar 2 (Tue) -->
+  <rect x="175" y="270" width="45" height="120" rx="12" fill="#15803d" opacity="0.3" />
+  <!-- Bar 3 (Wed) -->
+  <rect x="240" y="220" width="45" height="170" rx="12" fill="#166534" stroke="#22c55e" stroke-width="2.5" />
+  <!-- Bar 4 (Thu) -->
+  <rect x="305" y="160" width="45" height="230" rx="12" fill="#15803d" />
+  <!-- Bar 5 (Fri - Peak of habit tracking consistency) -->
+  <rect x="370" y="90" width="45" height="300" rx="12" fill="url(#glowGrad)" />
+
+  <!-- Smooth Swooping Arrow outlining top-tier growth trend direction -->
+  <path d="M 85 365 C 150 365, 230 280, 420 120" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" shadow="3px 3px 10px rgba(0,0,0,0.5)" />
+  <path d="M 390 120 L 420 120 L 420 150" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Bright Interactive Focus Dot / Sparkle on the pinnacle of True Improvement -->
+  <circle cx="420" cy="120" r="14" fill="#ffffff" />
+  <circle cx="420" cy="120" r="28" fill="#4ade80" opacity="0.4" />
+</svg>

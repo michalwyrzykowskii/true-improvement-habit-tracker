@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-beige-50: #EADCCB;
+  --color-beige-100: #DFCEBB;
+  --color-beige-200: #CEBCA8;
+  --color-beige-300: #BEAA94;
+  --color-beige-400: #A8937B;
+  --color-beige-500: #917C64;
+  --color-beige-600: #7A654F;
+
+  --color-brown-20: #EADCCB;
+  --color-brown-50: #DFCBB8;
+  --color-brown-100: #EADCD3;
+  --color-brown-200: #D5BCAB;
+  --color-brown-300: #B8967E;
+  --color-brown-400: #9B7459;
+  --color-brown-500: #805C43;
+  --color-brown-600: #6B4C36;
+  --color-brown-700: #573E2C;
+  --color-brown-800: #422F22;
+  --color-brown-900: #312218;
+  --color-brown-950: #1D140E;
+}
+
+/* Custom scrollbars across the application */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 110, 100, 0.3);
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 110, 100, 0.5);
+}
+
+/* Base Card Transition Configuration */
+.theme-card {
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+}
+
+/* =========================================================
+   ST Sticky Header adaptions across different ranks
+   ========================================================= */
+header, 
+div[class*="sticky"] {
+  transition: all 500ms ease-in-out !important;
+}
+
+/* Default general body look (ALWAYS static beige/tan) */
+body {
+  background-color: #EADCCB !important;
+  color: #312218 !important;
+}
+
+/* Make everything 1.1 times larger on desktop/wider screens and lock viewport to prevent scrolling */
+@media (min-width: 1024px) {
+  html, body {
+    zoom: 1.1;
+    overflow: hidden !important;
+    height: 100% !important;
+    max-height: 100vh !important;
+  }
+}
+
+/* =========================================================
+   End of Stylesheet
+   ========================================================= */
